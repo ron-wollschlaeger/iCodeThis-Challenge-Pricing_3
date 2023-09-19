@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iCodeThis - Challenge: Pricing 3</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="relative flex min-h-screen items-center justify-center bg-gradient-to-tr from-[#D3CCE3] to-[#E9E4F0]">
+    <!-- Funny Background Stuff - START -->
+    <div
+        class="bg-center[mask-image:linear-gradient(black,rgba(255,255,255,10))] absolute inset-0 z-0 animate-pulse overflow-hidden">
+        <svg class="rotate-6 scale-150 stroke-black/10 opacity-10" width="100%" height="100%"
+            xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="smallGrid" width="8" height="8" patternUnits="userSpaceOnUse">
+                    <path d="M 8 0 L 0 0 0 8" fill="none" stroke="black" stroke-width="0.5" />
+                </pattern>
+                <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+                    <rect width="80" height="80" fill="url(#smallGrid)" />
+                    <path d="M 80 0 L 0 0 0 80" fill="none" stroke="black" stroke-width="0.5" />
+                </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#grid)" />
+        </svg>
+    </div>
+    <!-- Funny Background Stuff - END -->
+
+    <main class="z-10 flex w-full gap-1 flex-row flex-wrap justify-center text-gray-600">
+
+        <div
+            class="mb-5 flex w-full max-w-xs flex-col items-center justify-between overflow-hidden bg-white text-center">
+            <header
+                class="relative mb-32 flex h-20 w-full items-end justify-center pb-2 pt-20 text-4xl font-bold before:absolute before:inset-2 before:skew-y-3 before:scale-150 before:bg-gray-600">
+                <h2 class="z-0 uppercase text-lime-300">Light</h2>
+            </header>
+
+            <div class="relative mb-20 flex flex-col gap-5 font-bold">
+                <span class="mb-10 text-7xl">$19<small class="text-base">/mo</small></span>
+                <span class="block text-xl font-extrabold leading-6">100<br /><span class="font-normal text-gray-500">Max Connections</span></span>
+                <span class="block text-xl font-extrabold leading-6">200,000<br /><span class="font-normal text-gray-500">Messages per day</span></span>
+                <span class="block text-xl font-extrabold leading-6 text-gray-400 before:absolute before:bottom-5 before:left-0 before:right-0 before:h-1 before:-rotate-12 before:bg-gray-600">Encryption<br /><span class="font-normal text-gray-400">SSL Protection</span></span>
+            </div>
+
+            <button class="mb-20 bg-lime-300 px-4 py-2 text-xl font-bold">
+        <span class="uppercase">Select Plan</span>
+      </button>
+        </div>
+
+        <div
+            class="mb-5 flex w-full max-w-md flex-col items-center justify-between overflow-hidden bg-white text-center">
+            <header
+                class="relative mb-32 flex h-20 w-full items-end justify-center pb-2 pt-20 text-4xl font-bold before:absolute before:inset-[-.36rem] before:skew-y-3 before:scale-150 before:bg-gray-600">
+                <h2 class="z-0 uppercase text-emerald-300">Startup</h2>
+            </header>
+
+            <div class="mb-20 flex flex-col gap-5 font-bold">
+                <span class="mb-10 text-7xl">$49<small class="text-base">/mo</small></span>
+                <span class="block text-xl font-extrabold leading-6">500<br /><span class="font-normal text-gray-500">Max Connections</span></span>
+                <span class="block text-xl font-extrabold leading-6">1 million<br /><span class="font-normal text-gray-500">Messages per day</span></span>
+                <span class="block text-xl font-extrabold leading-6">Encryption<br /><span class="font-normal text-gray-400">SSL Protection</span></span>
+            </div>
+
+            <button class="mb-20 bg-emerald-300 px-4 py-2 text-xl font-bold">
+        <span class="uppercase">Select Plan</span>
+      </button>
+        </div>
+
+        <div
+            class="mb-5 flex w-full max-w-xl flex-col items-center justify-between overflow-hidden bg-white text-center">
+            <header
+                class="relative mb-32 flex h-20 w-full items-end justify-center pb-2 pt-20 text-4xl font-bold before:absolute before:-inset-6 before:skew-y-3 before:scale-150 before:bg-gray-600">
+                <h2 class="z-0 uppercase text-cyan-400">Big Boy</h2>
+            </header>
+
+            <div class="mb-20 flex flex-col gap-5 font-bold">
+                <span class="mb-10 text-7xl">$199<small class="text-base">/mo</small></span>
+                <span class="block text-xl font-extrabold leading-6">5000<br /><span class="font-normal text-gray-500">Max Connections</span></span>
+                <span class="block text-xl font-extrabold leading-6">10 million<br /><span class="font-normal text-gray-500">Messages per day</span></span>
+                <span class="block text-xl font-extrabold leading-6">Encryption<br /><span class="font-normal text-gray-400">SSL Protection</span></span>
+            </div>
+
+            <button class="mb-20 bg-cyan-400 px-4 py-2 text-xl font-bold">
+        <span class="uppercase">Select Plan</span>
+      </button>
+        </div>
+
+    </main>
+</body>
+</html>
